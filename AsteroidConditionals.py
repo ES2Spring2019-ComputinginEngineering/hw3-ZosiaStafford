@@ -20,7 +20,7 @@
 # Run this code in micro:bit mode
 
 # The following is code for a mini-version of the classic game Asteroids for micro:bit.
-# Feel free to read over the functions in the following functions to understand what they do,
+# Feel free to read over the following functions to understand what they do,
 # they should not need any modification. 
 # Around line 108 you will find the start of the "main script"
 # The main script is the code that makes the game work. It is missing two critical 
