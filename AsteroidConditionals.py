@@ -10,8 +10,8 @@
 
 # FILL THESE COMMENTS IN
 #*****************************************
-# YOUR NAME:
-# NUMBER OF HOURS TO COMPLETE:  
+# YOUR NAME: Zosia Stafford
+# NUMBER OF HOURS TO COMPLETE:
 # YOUR COLLABORATION STATEMENT(s):
 #
 #
@@ -21,9 +21,9 @@
 
 # The following is code for a mini-version of the classic game Asteroids for micro:bit.
 # Feel free to read over the following functions to understand what they do,
-# they should not need any modification. 
+# they should not need any modification.
 # Around line 108 you will find the start of the "main script"
-# The main script is the code that makes the game work. It is missing two critical 
+# The main script is the code that makes the game work. It is missing two critical
 # conditional statements. Please fill them in.
 
 
@@ -34,7 +34,7 @@ import random #This library allows us to create random numbers.
 pixel_width, pixel_height = 4, 4    #The micro:bit has a 5 x 5 grid of pixels
                                     #The top left position is (0,0)
                                     #The bottom right position is (4, 4)
-                                    
+
 Frame_Rate_In_Milliseconds = 500    #Speed of screen updates
                                     #smaller delay = faster = harder
 
@@ -99,7 +99,7 @@ def create_asteroid():
     asteroid_x = random.randint(0, pixel_width)
     asteroid_y = 0
     return [asteroid_x, asteroid_y]
-  
+
 def move_asteroid(asteroid_y):
     asteroid_y += 1
     return asteroid_y
@@ -117,7 +117,7 @@ ship_X = create_ship()
 [asteroid_x, asteroid_y] = create_asteroid()
 
 # Game Start
-display_start() 
+display_start()
 display.clear()
 
 # Main Game Loop
@@ -128,9 +128,9 @@ while True:
 
     sleep(Frame_Rate_In_Milliseconds) #Delay between animations
 
-    if False :  #Test to see if the ship has hit an asteroid
+    if ((asteroid_x == ship_X) and (asteroid_y == ship_Y)) :  #Test to see if the ship has hit an asteroid
         # STEP 1 ##########################################################
-        # Write a logical expression (replace the "False") above to determine 
+        # Write a logical expression (replace the "False") above to determine
         # if the ship and asteroid are at the same location
         # That is to say, that they have the same X and Y postion
         display_game_over(ship_X , score)
@@ -139,7 +139,7 @@ while True:
     hide_ship(ship_X)
     hide_asteroid(asteroid_x, asteroid_y)
 
-    if False:   #Test to see if the current asteroid is at the bottom
+    if (asteroid_y == 4):   #Test to see if the current asteroid is at the bottom
         # STEP 2 ###########################################################
         # Write a logical expression (replace the "False") above to determine
         # if the asteroid is at the bottom of the screen. That is if asteroid_y
