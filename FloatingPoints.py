@@ -51,11 +51,13 @@ import math
 # ****************************************************************************************************
 
 def almost_equal(A, B):
+    close = 10**-9
+    if abs(A-B) >= close:
     # Complete a function called almost_equal, which takes two arguments (two floating numbers) and
     # returns True (boolean) if the difference is less than or equal to 0.000000001 which in Python may be written as 10**-9.
     # It should return False (boolean) if the difference is greater than 0.000000001.
     # Create your function here.
-    return False
+        return False
 
 
 # ****************************************************************************************************
