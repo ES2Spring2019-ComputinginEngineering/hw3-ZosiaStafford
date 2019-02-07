@@ -7,7 +7,7 @@
 from microbit import *
 import math
 
-#Functions - the math
+#Functions - finding the angles
 def anglex_radian(x, y, z):
     xrad = math.atan2(x,(math.sqrt(y**2+z**2)))      #x in radians
     return xrad
