@@ -1,7 +1,7 @@
 #Name: Zosia Stafford
 #Partners: Hector and Gillian (We each have different codes but worked together on the basics)
 #When running, an arrow points in the direction the microbit needs to move to be flat
-#The brighter the arrow, the more it must move
+#The brighter the arrow, the more it must move to get back to center
 
 #Imports
 from microbit import *
